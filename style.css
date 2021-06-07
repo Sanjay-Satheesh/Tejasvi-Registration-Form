@@ -10,8 +10,8 @@
 }
 
 body{
-	background:  #060d13
-    ;
+	background:  url(pic1.jpg);
+    background-size: cover;
 }
  
 .wrapper{
@@ -26,6 +26,7 @@ body{
 	padding: 25px;
 	border-radius: 5px;
 	width: 400px;
+	opacity: 0.9999;
 }
 
 .registration_form .title{
@@ -101,14 +102,59 @@ body{
 	border: 0;
 	border-radius: 3px;
 	text-transform: uppercase;
+	color: black;
 	letter-spacing: 3px;
 	cursor: pointer;
     font-weight: 550;
 }
 
-.form_wrap .submit_btn:hover{
-	background: #ffd5d2;
+.form_wrap ul{
+	background: #12273b;
+	padding: 8px 10px;
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
 }
+
+.form_wrap ul li:first-child{
+	margin-right: 15px;
+}
+
+.form_wrap ul .radio_wrap{
+	position: relative;
+	margin-bottom: 0;
+}
+
+.form_wrap ul .radio_wrap .input_radio{
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0;
+}
+
+.form_wrap ul .radio_wrap span{
+	display: inline-block;
+	font-size: 14px;
+	padding: 3px 20px;
+	border-radius: 3px;
+	color: #6d9ec5;
+	font-weight: 300;
+}
+
+.form_wrap .input_radio:checked ~ span{
+	background: #884dff;
+	color: black;
+	font-weight: 600;
+}
+.form_wrap .submit_btn:hover{
+	background: #FF69B4;
+}
+
+input, select, textarea{
+    color: #FF69B4;
+}
+
+
 
 
 
